@@ -1,0 +1,10 @@
+extern DWORD   fpCalculateTeleportPath(long x, long y, LPPOINT lpBuffer, DWORD dwMaxCount);
+void TeleportTo(WORD x, WORD y);
+UnitAny* GetUnitByPosition(long x,long y);
+extern POINT aPath[255];
+extern POINT WalkPath[255];
+//DWORD WINAPI TeleportThread(LPVOID P) ;
+DWORD WINAPI WalkThread(LPVOID P);
+	extern bool AutoTele;
+extern int CurrentDW;
+void Interact(DWORD ID,DWORD Type);

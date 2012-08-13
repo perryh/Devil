@@ -1,0 +1,12 @@
+extern int Delay;
+extern bool AutoPK;
+extern bool Flash;
+extern bool CastMissles;
+extern HANDLE TimerHandle;
+	DWORD WINAPI TimerTickThread(LPVOID P);
+	DWORD WINAPI TimerTickThread2(LPVOID P);
+	DWORD WINAPI TimerTickThread3(LPVOID P);
+		void TimerTick();
+extern bool D2Inited;
+extern int D2Delay;
+VOID CheckAntiTppk();
